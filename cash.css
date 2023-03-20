@@ -1,0 +1,469 @@
+@font-face {
+  font-family: "neuehass-light";
+  src: url(./NeueHaasDisplay-Light.3dc54485.ttf);
+}
+@font-face {
+  font-family: "neuehass-roman";
+  src: url(./NeueHaasDisplay-Roman.47d012e6.ttf);
+}
+@font-face {
+  font-family: "neuehass-xl";
+  src: url(./NHaasGroteskDSPro-35XLt.89ccb29d\ \(1\).ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+#nav {
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 60px;
+  position: fixed;
+  font-family: "neuehass-light";
+  z-index: 9999;
+  cursor: pointer;
+}
+#nav #explore {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  opacity: 0.8;
+}
+#nav #login {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  opacity: 1;
+}
+#nav #login #customer {
+  border: 1px solid #000;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+#nav h5 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#page1 {
+  width: 100%;
+  height: 120vh;
+}
+#page1 #page-up {
+  width: 100%;
+  height: 65px;
+}
+#page1 #page-down {
+  height: 100vh;
+  background-image: url(//strapi-cms-asset.s3.eu-west-1.amazonaws.com/main_page_bkg_9d686e764f.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+#page1 #page-down img {
+  width: 52%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#page1 #page-down #baar-code {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#page1 #page-down #baar-code img {
+  width: 150px;
+  height: 150px;
+}
+#page1 #page-down #text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "neuehass-xl";
+}
+#page1 #page-down #text-area h1 {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+#page1 #page-down #text-area h4 {
+  font-weight: 100;
+  line-height: 22px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+#page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 40px 30px;
+}
+#page2 h1 {
+  font-family: "neuehass-xl";
+  font-size: 100px;
+  font-weight: 100;
+}
+#page2 #parts {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+#page2 #parts .part {
+  position: relative;
+}
+#page2 #parts .part button {
+  padding: 5px 15px;
+  border-radius: 30px;
+  border: 1px solid rgb(159, 159, 159);
+  background-color: transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3%;
+  left: 1%;
+}
+#page2 #parts #part1 {
+  width: 700px;
+  height: 430px;
+  background-image: url(./laptop.png);
+  background-size: cover;
+}
+#page2 #parts #part2 {
+  width: 480px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#page2 #parts #part2 #part2-up {
+  width: 100%;
+  height: 50%;
+  background-image: url(./shoes.png);
+  background-size: cover;
+  position: relative;
+}
+#page2 #parts #part2 #part2-down {
+  width: 100%;
+  height: 50%;
+  background-image: url(./Beauty.png);
+  background-size: cover;
+}
+#page2 #parts #part3 {
+  width: 222px;
+  height: 430px;
+  background-image: url(./tree.png);
+  background-size: cover;
+}
+#page2 #view {
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  width: 170px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+#page2 #view h2 {
+  font-weight: 100;
+  font-family: "neuehass-light";
+  font-size: 20px;
+  opacity: 0.9;
+}
+#page2 #view i {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+#page3 {
+  background-color: rgb(255, 255, 255);
+}
+#page3 #page3-part {
+  background-image: url(./background.svg);
+  border-radius: 20px;
+  background-size: cover;
+  padding: 40px 30px;
+  padding-bottom: 0;
+}
+#page3 #page3-part h1 {
+  width: 600px;
+  font-size: 90px;
+  font-family: "neuehass-xl";
+  font-weight: 100;
+}
+#page3 #page3-part p {
+  width: 280px;
+  line-height: 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  font-family: "neuehass-xl";
+  font-weight: 100;
+}
+#page3 #page3-part #step-area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+#page3 #page3-part #step-area #one {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  gap: 20px;
+}
+#page3 #page3-part #step-area #one #left {
+  width: 40px;
+  height: 300px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+#page3 #page3-part #step-area #one #left #up-img {
+  height: 25px;
+  width: 100%;
+  z-index: 9999999999999;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+}
+#page3 #page3-part #step-area #one #left #tick3 {
+  position: absolute;
+  opacity: 0;
+  z-index: 99999999;
+}
+#page3 #page3-part #step-area #one #left #dots {
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#page3 #page3-part #step-area #one #left #dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#page3 #page3-part #step-area #one #left #overflow {
+  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  top: -92%;
+}
+#page3 #page3-part #step-area #one #left #overflow #tick {
+  position: absolute;
+  bottom: 47%;
+}
+#page3 #page3-part #step-area #one #left #overflow2 {
+  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  top: -91%;
+}
+#page3 #page3-part #step-area #one #left #overflow2 #tick2 {
+  position: absolute;
+  bottom: 47%;
+}
+#page3 #page3-part #step-area #one #right {
+  width: 300px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#page3 #page3-part #step-area #one #right .step h1 {
+  font-size: 40px;
+  font-weight: 100;
+  font-family: "neuehass-xl";
+}
+#page3 #page3-part #step-area #one #right .step h4 {
+  margin-top: 12px;
+  opacity: 0.5;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: "neuehass-xl";
+}
+#page3 #page3-part #step-area #two {
+  width: 300px;
+  height: 400px;
+}
+#page3 #page3-part #step-area #two h1 {
+  font-size: 50px;
+  width: 100px;
+}
+#page3 #page3-part #step-area #two p {
+  width: 330px;
+  line-height: 22px;
+}
+#page3 #page3-part #step-area #img {
+  width: 400px;
+  height: 600px;
+  background-image: url(./phone.png);
+  background-size: cover;
+}
+
+#page4 {
+  display: flex;
+  padding: 140px 40px;
+  background-color: #fff;
+}
+#page4 #page4-left h1 {
+  font-size: 90px;
+  font-weight: 100;
+  font-family: "neuehass-xl";
+}
+#page4 #page4-left p {
+  width: 300px;
+  margin-top: 7px;
+  line-height: 23px;
+  opacity: 0.7;
+  font-family: "neuehass-light";
+  font-size: 18px;
+}
+#page4 #page4-left .icon {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  margin-top: 60px;
+  margin-left: 10px;
+  gap: 70px;
+  font-family: "neuehass-xl";
+}
+#page4 #page4-left .icon img {
+  width: 100px;
+}
+#page4 #page4-left .icon h1 {
+  font-size: 34px;
+}
+#page4 #page4-left .icon p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+#page4 #page4-right {
+  max-height: 540px;
+}
+#page4 #page4-right video {
+  transform: rotate(15deg) translateY(-10rem) scale(1.2);
+  margin-left: 230px;
+  margin-top: 250px;
+  max-width: 100%;
+}
+
+#page5 {
+  padding-top: 50px;
+  border-top: 1px solid #000;
+}
+#page5 #top {
+  margin-top: 120px;
+  display: flex;
+  gap: 27%;
+}
+#page5 #top #top-left p {
+  margin-top: 30px;
+  width: 100px;
+  line-height: 30px;
+}
+#page5 #top #top-left #top-left-icon {
+  margin-top: 80px;
+}
+#page5 #top #top-left #top-left-icon img {
+  margin-left: 10px;
+}
+#page5 #top #top-left #p1 {
+  font-family: "neuehass-xl";
+  width: 200px;
+  margin-top: 90px;
+  font-size: 14px;
+}
+#page5 #top #top-right {
+  display: flex;
+  gap: 50px;
+}
+#page5 #top #top-right .block h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-family: "neuehass-xl";
+  letter-spacing: 1px;
+}
+#page5 #top #top-right .block h4 {
+  opacity: 0.7;
+  font-size: 15px;
+  line-height: 50px;
+  font-family: "neuehass-xl";
+}
+#page5 #top #top-right .block h4 a {
+  text-decoration: none;
+  color: #000;
+}
+#page5 #top #top-right .block #h3 {
+  margin-left: 50px;
+}
+#page5 #top #top-right .block #email {
+  display: flex;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+}
+#page5 #top #top-right .block #email form {
+  padding: 0px 10px;
+}
+#page5 #top #top-right .block #email form input {
+  outline: none;
+  border: none;
+}
+#page5 #top #top-right .block #email button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+#page5 #bottom {
+  margin-top: 20px;
+}
+#page5 #bottom img {
+  width: 100%;
+}/*# sourceMappingURL=cash.css.map */

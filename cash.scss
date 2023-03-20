@@ -1,0 +1,549 @@
+@font-face{
+    font-family:"neuehass-light";
+    src: url(./NeueHaasDisplay-Light.3dc54485.ttf);
+}
+@font-face{
+    font-family:"neuehass-roman";
+    src: url(./NeueHaasDisplay-Roman.47d012e6.ttf);
+}
+@font-face{
+    font-family:"neuehass-xl";
+    src: url(./NHaasGroteskDSPro-35XLt.89ccb29d\ \(1\).ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative; 
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;   
+}
+
+#nav{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    // background-color: aqua;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    position: fixed;
+    font-family:"neuehass-light" ;
+    z-index: 9999;
+    cursor: pointer;
+
+    #explore{
+        display: flex;
+        align-items: center;
+        gap :50px;
+        opacity: 0.8;
+    }
+
+    #login{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        opacity: 1;
+       
+        #customer{
+            border: 1px solid #000;
+            padding: 10px 15px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+    h5{
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
+
+#page1{
+    width: 100%;
+    height: 120vh;
+    // background-color: rgb(121, 91, 91);
+
+    #page-up{
+        width: 100%;
+        height: 65px;
+    }
+    #page-down{
+        // width: 98%;
+        height: 100vh;
+        background-image:url(//strapi-cms-asset.s3.eu-west-1.amazonaws.com/main_page_bkg_9d686e764f.jpg);
+        background-size: cover;
+        border-radius: 20px;
+        // margin-left: 13px;
+
+        img{
+            width: 52%;
+            height: 60%;
+            object-fit: cover;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #baar-code{
+            width: 550px;
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        #text-area{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-family: "neuehass-xl";
+
+            h1{
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
+
+            h4{
+                font-weight: 100;
+                line-height: 22px;
+                letter-spacing: 1px;
+                font-size: 18px;
+                opacity: 0.6;
+                // background-color: blueviolet;
+            }
+        }
+    }
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    
+    h1{
+        font-family: "neuehass-xl";
+        font-size: 100px;
+        font-weight: 100;
+    }
+
+    #parts{
+        display: flex;
+        align-items: center;
+        // background-color: aqua;
+        margin-top: 20px;
+        gap: 10px;
+       
+
+        .part{
+            position: relative;
+            button{
+                padding: 5px 15px;
+                border-radius: 30px;
+                border: 1px solid rgb(159, 159, 159);
+                background-color: transparent;
+                opacity: 0.6;
+                cursor: pointer;
+                position: absolute;
+                bottom: 3%;
+                left: 1%;
+            }
+        }
+    
+        #part1{
+            width: 700px;
+            height: 430px;
+            // background-color: bisque;
+            background-image: url(./laptop.png);
+            background-size: cover;
+        }
+    
+        #part2{
+            width: 480px;
+            height: 430px;
+            // background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            #part2-up{
+                width: 100%;
+                height: 50%;
+                // background-color: cadetblue;
+                background-image: url(./shoes.png);
+                background-size: cover;
+                position: relative;
+            }
+    
+            #part2-down{
+                width: 100%;
+                height: 50%;
+                // background-color: rgb(158, 183, 183);
+                background-image: url(./Beauty.png);
+                background-size: cover;
+            }
+        }
+    
+        #part3{
+            width: 222px;
+            height: 430px;
+            // background-color: bisque;
+            background-image: url(./tree.png);
+            background-size: cover;
+        }
+    }
+
+    #view{
+        padding: 3px 10px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+        justify-content: space-between;
+        background-color: #000;
+        color: #fff;
+        width: 170px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 70px;
+        
+
+        h2{
+            font-weight: 100;
+            font-family:"neuehass-light";
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        i{
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+    }
+    
+}
+#page3{
+    background-color: rgb(255, 255, 255);
+    #page3-part{
+        background-image: url(./background.svg);
+        border-radius: 20px;
+        background-size: cover;
+        padding: 40px 30px ;
+        padding-bottom: 0;
+
+        h1{
+            width: 600px;
+            // background-color: aqua;
+            font-size: 90px;
+            font-family:"neuehass-xl";
+            font-weight: 100;
+        }
+        p{
+            width: 280px;
+            line-height: 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.9;
+            letter-spacing: 1px;
+            font-family:"neuehass-xl";
+            font-weight: 100;
+        }
+        #step-area{
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+            margin-top: 130px;
+
+            #one{
+                width: 350px;
+                height: 450px;
+                // background-color: aqua;
+                display: flex;
+                // align-items: center;
+                gap: 20px;
+                
+
+                #left{
+                    width: 40px;
+                    height: 300px;
+                    background-color: transparent;
+                    border: 2px solid #fff;
+                    border-radius: 50px;
+                    position: relative;
+                    overflow: hidden;
+
+                    #up-img{
+                        height: 25px;
+                        width: 100%;
+                        z-index: 9999999999999;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0%;
+                    }
+
+                    #tick3{
+                        position: absolute;
+                        opacity: 0;
+                        z-index: 99999999;
+                    }
+                    
+                    #dots{
+                        padding-bottom: 10px ;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        // z-index: 99999;
+
+                        
+                        .dot{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color:#fff;
+                        }
+                    }
+                    #overflow{
+                        position: relative;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50px;
+                        background-color: rgb(255, 255, 255);
+                        top: -92%;
+                        // z-index: 10;
+
+                        #tick{
+                            position: absolute;
+                            bottom: 47%;
+                        }
+                    }
+                    #overflow2{
+                        position: relative;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50px;
+                        background-color: rgb(255, 255, 255);
+                        top: -91%;
+                        // z-index: 10;
+
+                        #tick2{
+                            position: absolute;
+                            bottom: 47%;
+                        }
+                    }
+                }
+
+                #right{
+                    width: 300px;
+                    gap: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    .step{
+                        h1{
+                            font-size: 40px;
+                            font-weight: 100;
+                            font-family:"neuehass-xl";
+
+                        }
+                        h4{
+                            margin-top: 12px;
+                            opacity: 0.5;
+                            font-weight: 100;
+                            font-size: 20px;
+                            font-family:"neuehass-xl";
+                        }
+                    }
+                }
+            }
+            #two{
+                width: 300px;
+                height: 400px;
+                // background-color: aqua;
+
+                h1{
+                    font-size: 50px;
+                    width: 100px;
+                }
+                p{
+                    width: 330px;
+                    line-height: 22px;
+                }
+            }
+            #img{
+                width: 400px;
+                height: 600px;
+                // background-color: aqua;
+                background-image: url(./phone.png);
+                background-size: cover;
+            }
+        }
+    }
+}
+#page4{
+    display: flex;
+    padding: 140px 40px;
+    background-color: #fff;
+    #page4-left{
+
+        h1{
+            font-size: 90px;
+            font-weight: 100;
+            font-family:"neuehass-xl";
+        }
+        p{
+            width: 300px;
+            margin-top: 7px;
+            line-height: 23px;
+            opacity: 0.7;
+            font-family:"neuehass-light";
+            font-size: 18px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            width: 600px;
+            margin-top: 60px;
+            margin-left: 10px;
+            // background-color: aqua  ;
+            gap: 70px;
+            font-family:"neuehass-xl";
+
+            img{
+                width: 100px;
+            }
+            h1{
+                font-size: 34px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 30px;
+            }
+            
+        }
+    }
+    #page4-right{
+        max-height: 540px;
+        // background-color: transparent;
+        video{
+            transform: rotate(15deg) translateY(-10rem) scale(1.2);
+            margin-left: 230px;
+            margin-top: 250px;
+            max-width: 100%;
+        }
+    }
+}
+#page5{
+    padding-top: 50px;
+    border-top: 1px solid #000;
+    // background-color: aqua;
+    #top{
+        margin-top: 120px;
+        // height: 70%;
+        display: flex;
+        gap: 27%;
+        #top-left{
+            
+            p{
+                margin-top: 30px;
+                width: 100px;
+                line-height: 30px;
+            }
+            #top-left-icon{
+                margin-top: 80px;
+                
+                img{
+                    margin-left: 10px;
+                }
+            }
+            #p1{
+                font-family:"neuehass-xl";
+                width: 200px;
+                margin-top: 90px;
+                font-size: 14px;
+
+            }
+
+        }
+        #top-right{
+            display: flex;
+            gap:50px;
+            
+            
+            // background-color: yellow;
+            
+            .block{
+                // width: 200px;
+                // background-color: violet;
+                
+                h3{
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                    font-family:"neuehass-xl";
+                    letter-spacing: 1px;
+                }
+                h4{
+                    opacity: 0.7;
+                    font-size: 15px;
+                    line-height: 50px;
+                    font-family:"neuehass-xl";
+                    
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+
+                }
+                #h3{
+                    margin-left: 50px;
+                }
+                #email{
+                    display: flex;
+                    border-bottom: 1px solid #000;
+                    padding-bottom: 10px;
+                    margin-left: 50px;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 350px;
+                    form{
+                        padding: 0px 10px;
+                        input{
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                    button{
+                        border: none;
+                        background-color: transparent;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    #bottom{
+        margin-top: 20px;
+        
+        img{
+            width: 100%;
+        }
+    }
+}
+
